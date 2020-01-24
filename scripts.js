@@ -1,7 +1,13 @@
-let userInput;
-userInput = "samosa";
-if ( userInput === "burrito" ) {
-  $("#response").html("Brilliant choice!");
-} else {
-  $("response").html("Don't you want a burrito?");
-}
+let tipCalculator;
+tipCalculator = function(total, tipRate) {
+  // step 1:
+  let tipAmount;
+  tipAmount = tipRate * total;
+  // step 2:
+  $("#response").html("Your tip is $" + tipAmount);
+};
+
+// Now call (or "execute") the function, passing a
+// total of $50.00 and a tipRate of 20%
+
+tipCalculator(50.00, .2);
